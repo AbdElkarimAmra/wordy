@@ -1,5 +1,6 @@
 package wordy.ast;
 
+import java.io.PrintWriter;
 import java.util.Map;
 import java.util.Objects;
 
@@ -51,7 +52,12 @@ public class LoopNode extends StatementNode {
                 body.run(context);
             }
         } catch (LoopExited e) {
-            
+
         }
+    }
+    @Override
+    public void compile(PrintWriter out) {
+        out.print("while(true) ");
+        body.compile(out);
     }
 }
