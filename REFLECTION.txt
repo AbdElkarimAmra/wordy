@@ -1,0 +1,5 @@
+My solution was really similar to Paul’s even though we used different approaches. For example, I 
+used if/else statements in different places, but Paul used switch expressions instead. I also noticed 
+that Paul made some of the base methods abstract, which makes sense now that I'm thinking about 
+it because it forces every subclass to implement them. Overall, I can see that there can be multiple 
+correct ways to write the same logic, but some approaches can be cleaner or safer than others.
